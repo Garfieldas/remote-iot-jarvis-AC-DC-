@@ -43,6 +43,7 @@ Use hysteresis to avoid rapid ON/OFF toggling:
 - Example:
   - If `temp > target + 0.7°C` => send cool command
   - If `temp < target - 0.3°C` => send stop or fan-only command
+- Rationale: asymmetric bands can reduce compressor cycling while keeping comfort; tune values experimentally for your room/AC model.
 
 Add:
 - Minimum command interval (e.g., 30–60 s)
